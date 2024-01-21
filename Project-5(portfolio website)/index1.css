@@ -1,0 +1,26 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.first{
+    width: 600px;
+    height: 600px;
+    background-color: aqua;
+    border: 2px solid black;
+    display: grid;
+    
+    grid-gap: 30px;
+    /* align-content:space-evenly; */
+    justify-items:baseline;
+   
+}
+
+.box{
+   border: 2px solid black;
+   height: 100px;
+   width: 150px; 
+   justify-self: baseline;
+}
+

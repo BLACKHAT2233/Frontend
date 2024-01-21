@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax effect</title>
+    <!-- <link rel="icon" href="background.png"> -->
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .mail{
+            height: 100vh;
+            overflow-x: hidden;
+            overflow-y: auto;
+            perspective: 10px;
+
+        }
+
+        .first{
+          position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform-style: preserve-3d;
+            height: 100vh;
+            z-index: -1;
+        
+        }
+        .background, .foreground{
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            object-fit: cover;
+        }
+        h1{
+            font-size: 7rem; 
+            padding-bottom: 250px;
+            text-align: center;
+            color:white;
+            text-shadow: 2px 1px ;
+            font-weight: bolder;
+              
+        }
+        .background{
+            transform: translateZ(-40px) scale(6);
+        }
+        .foreground{
+            transform: translateZ(-20px) scale(3);
+        }
+
+        section{
+            background-color: rgb(45,45,45);
+            color: white;
+            padding: 5rem 0;
+        }
+        .second{
+            font-size: 4rem;
+            padding: 0 10rem;
+        }
+        .text{
+            font-size: 1.5rem;
+            padding: 0 10rem;
+            margin: 5rem 0;
+        }
+        .bg1{
+            background-image: url(sport-1.jpg);
+        }
+        .bg2{
+            background-image: url(sport-2.jpg);
+        }
+        .bg3{
+            background-image: url(sport-3.jpg);
+        }
+        .bg{
+            position: relative;
+            width: 100%;
+            background-attachment: fixed;
+            height: 500px;
+            background-size: cover;
+
+        }
+        .desc{
+            background-color: white;
+            position: absolute;
+            padding: 1rem 2.5rem;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%);
+            color: black;
+            font-size: 3.5rem;
+            font-weight: 600;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="mail">
+        <div class="first">
+            <img src="background.png" class="background">
+            <img src="foreground.png" class="foreground">
+            <h1>ADVENTURE</h1>
+
+        </div>
+
+        <section >
+            <h2 class="second">Adventure Time !</h2>
+            <p class="text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque doloribus aliquam officiis. Similique repudiandae ut voluptatibus libero. Cumque, ab error reiciendis velit nostrum odio non aperiam distinctio, natus, libero tempora sunt quidem odit dolorem aspernatur eos. Deserunt officiis deleniti neque cum nostrum error aliquid, ducimus accusantium assumenda! Dolorem accusantium perspiciatis ut alias nulla perferendis adipisci reiciendis repudiandae ducimus exercitationem neque dolor, distinctio pariatur nesciunt itaque. Possimus itaque cum consectetur molestiae, soluta asperiores sequi fugit modi!
+                <br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus similique laboriosam possimus! Fugit assumenda excepturi minima, corporis mollitia asperiores odit aperiam neque error tempora blanditiis tempore. Illum quaerat repellat quae aspernatur dolorum excepturi impedit dicta minima possimus molestias, rem officia.
+            </p>
+
+            <div class="bg bg1">
+                <h2 class="desc">Biking</h2>
+            </div>
+            <p class="text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque doloribus aliquam officiis. Similique repudiandae ut voluptatibus libero. Cumque, ab error reiciendis velit nostrum odio non aperiam distinctio, natus, libero tempora sunt quidem odit dolorem aspernatur eos. Deserunt officiis deleniti neque cum nostrum error aliquid, ducimus accusantium assumenda! Dolorem accusantium perspiciatis ut alias nulla perferendis adipisci reiciendis repudiandae ducimus exercitationem neque dolor, distinctio pariatur nesciunt itaque. Possimus itaque cum consectetur molestiae, soluta asperiores sequi fugit modi!
+                <br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus similique laboriosam possimus! Fugit assumenda excepturi minima, corporis mollitia asperiores odit aperiam neque error tempora blanditiis tempore. Illum quaerat repellat quae aspernatur dolorum excepturi impedit dicta minima possimus molestias, rem officia.
+            </p>
+            <div class="bg bg2">
+                <h2 class="desc">Biking</h2>
+            </div>
+            <p class="text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque doloribus aliquam officiis. Similique repudiandae ut voluptatibus libero. Cumque, ab error reiciendis velit nostrum odio non aperiam distinctio, natus, libero tempora sunt quidem odit dolorem aspernatur eos. Deserunt officiis deleniti neque cum nostrum error aliquid, ducimus accusantium assumenda! Dolorem accusantium perspiciatis ut alias nulla perferendis adipisci reiciendis repudiandae ducimus exercitationem neque dolor, distinctio pariatur nesciunt itaque. Possimus itaque cum consectetur molestiae, soluta asperiores sequi fugit modi!
+                <br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus similique laboriosam possimus! Fugit assumenda excepturi minima, corporis mollitia asperiores odit aperiam neque error tempora blanditiis tempore. Illum quaerat repellat quae aspernatur dolorum excepturi impedit dicta minima possimus molestias, rem officia.
+            </p>
+            <div class="bg bg3">
+                <h2 class="desc">Biking</h2>
+            </div>
+            <p class="text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque doloribus aliquam officiis. Similique repudiandae ut voluptatibus libero. Cumque, ab error reiciendis velit nostrum odio non aperiam distinctio, natus, libero tempora sunt quidem odit dolorem aspernatur eos. Deserunt officiis deleniti neque cum nostrum error aliquid, ducimus accusantium assumenda! Dolorem accusantium perspiciatis ut alias nulla perferendis adipisci reiciendis repudiandae ducimus exercitationem neque dolor, distinctio pariatur nesciunt itaque. Possimus itaque cum consectetur molestiae, soluta asperiores sequi fugit modi!
+                <br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus similique laboriosam possimus! Fugit assumenda excepturi minima, corporis mollitia asperiores odit aperiam neque error tempora blanditiis tempore. Illum quaerat repellat quae aspernatur dolorum excepturi impedit dicta minima possimus molestias, rem officia.
+            </p>
+        </section>
+    </div>
+</body>
+</html>

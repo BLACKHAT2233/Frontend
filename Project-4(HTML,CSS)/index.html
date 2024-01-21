@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        *{
+            margin: 0 ;
+            padding: 0;
+            box-sizing: border-box;
+            
+        }
+        h1{
+            text-align: center;
+            font-weight: 900;
+            font-family:serif;
+            padding: 50px;
+            font-size: 3rem;
+
+        }
+        .main{
+            height: 100vh;
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content:space-around;
+            max-width: 1200px;
+            margin: 0 auto;
+            height: 100%;
+        }
+        .figure{
+            position: relative;
+
+        }
+        .image{
+            position: relative;
+            height: 350px;
+            width: 370px;
+            border-radius: 20px;
+            box-shadow: 0 0 20px #333;
+            filter: grayscale(100%);
+        }
+        figcaption{
+            /* position: absolute; */
+            position: relative;
+            bottom: 30px;
+            left: 20px;
+            color: white;
+            visibility: hidden;
+        }
+        
+        figure:hover
+        {
+            visibility: visible;
+            transform: scale(1.03);
+            transition-duration: 300ms;
+           
+        }
+        .image:hover{
+            filter: grayscale(0%);
+            transition-duration: 500ms;
+        }
+        figure:hover figcaption{
+            visibility: visible;
+            transform: scale(1.01);
+            transition-duration: 300ms;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>MY Gallery</h1>
+
+        <div class="container">
+
+        <figure>
+            <img src="image1.jpg" alt="Image1" class="image image1">
+            <figcaption>Image1</figcaption>
+        </figure>
+        <figure>
+            <img src="image2.jpeg" alt="Image2" class="image image2">
+            <figcaption>Image2</figcaption>
+        </figure>
+        <figure>
+            <img src="image3.jpeg" alt="Image3" class="image image3">
+            <figcaption>Image3</figcaption>
+        </figure>
+
+        <figure>
+            <img src="image4.jpeg" alt="Image4" class="image image4">
+            <figcaption>Image4</figcaption>
+        </figure>
+        <figure>
+            <img src="image5.jpeg" alt="Image5" class="image image5"> 
+            <figcaption>Image5</figcaption>
+        </figure>
+        <figure>
+            <img src="image6.jpeg" alt="Image6" class="image image6">
+            <figcaption>Image6</figcaption>
+        </figure>
+
+        <figure>
+            <img src="image7.jpeg" alt="Image7" class="image image7">
+            <figcaption>Image7</figcaption>
+        </figure>
+        <figure>
+            <img src="image8.jpeg" alt="image8 " class="image image8">
+            <figcaption>image8</figcaption>
+        </figure>
+        <figure>
+            <img src="image9.jpeg" alt="Image9" class="image image9">
+            <figcaption>image9</figcaption>
+        </figure>
+    </div>
+
+    </div>
+
+</body>
+</html>
